@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --primaryColor: rgba(255, 90, 48, 1);
+    --secondaryColor: rgba(30, 33, 44, 1);
+    --backgroundColor: rgb(229, 232, 237);
+    --btnBorder: 2px solid rgba(255, 90, 48, 1);
+    --btnBorderRadius: 5px;
+    --btnColor: rgba(255, 90, 48, 1);
+    --btnFontSize: 18px;
+    --btnPadding: 15px 25px;
+    --btnBackgroundColor: rgba(255, 90, 48, 1);
+    --btnHoverColor: white;
+    --btnHoverPadding: 25px 35px;
+    --btnTransition: 0.3s;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* кран */
+    .imgCran{
+        position: relative;
+    background-image: url('cran.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 980px;
+    display: flex;
+    top: 92px;
+    width: 100%;
+    justify-content: center;
+    }
+
+  /* текст на кране */
+  .cranTextH1 {
+    position: absolute;
+    top: 312px;
+    left: 345px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--backgroundColor);
+    text-align: left;
+    max-width: 577px;
+}
+
+.titleLine {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.titleLine span {
+    color: var(--primaryColor);
+}
+
+.subtitle {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.smallText {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+
+/* Кнопки */
+.cranBtns{
+position: absolute;
+top: 680px;
+left: 340px;
+gap: 25px;
+display: flex;
+}
+
+.btn{
+  cursor: pointer;
+
+font-size: var(--btnFontSize);
+padding: var(--btnPadding);
+border-radius: var(--btnBorderRadius);
+transition: var(--btnTransition);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.learnMore{
+background-color: transparent;
+color: white;
+border: 2px solid rgba(255, 255, 255, 0.401);
+}
+
+.submitRequest{
+color: white;
+background-color: var(--btnColor);
+border: none;
+}
+
+.learnMore:hover {
+    background-color: var(--btnColor);
+    color: var(--btnHoverColor);
+}
+
+.submitRequest:hover {
+    background-color: white;
+    color: var(--btnColor);
+    border: var(--btnBorder);
+}
+
+
+/* 2часть */
+
+.part2 {
+  background-color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.p2H1 h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+}
+
+.p2Sub {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--secondaryColor);
+}
+
+.videoThumbnail {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.videoThumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
