@@ -577,10 +577,11 @@ font-size: 25px;
 
 /* clients saying */
 
+
+
 .sayinBox {
   max-width: 600px;
   flex: 1;
-
 }
 
 .testimonialWrapper {
@@ -750,7 +751,7 @@ font-weight: bold;
   border: var(--btnBorder);
 }
 
-.btn.explore {
+.btn.explore1 {
   padding: var(--btnPadding);
   font-size: var(--btnFontSize);
   background-color: transparent;
@@ -763,7 +764,7 @@ font-weight: bold;
   border: none;
 }
 
-.btn.explore:hover {
+.btn.explore1:hover {
   background-color: var(--btnColor);
   color: var(--btnHoverColor);
 }
