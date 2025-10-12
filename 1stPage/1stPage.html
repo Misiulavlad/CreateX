@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st Page</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="1stPageStyle.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <header></header>
+        <header>
+            <div class="logo">
+                <div class="logo-text">Create<span class="logo-accent">X</span></div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="about.html" class="nav-link">About Us</a>
+                
+                <div class="dropdown">
+                    <a href="2ndPage.html" class="nav-link">
+                        Services
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="2ndPage.html" class="dropdown-item">Services</a>
+                        <a href="interior-design.html" class="dropdown-item">Interior Design</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a href="work.html" class="nav-link">
+                        Work
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="work.html" class="dropdown-item">Work</a>
+                        <a href="modern-cottage.html" class="dropdown-item">Modern Cottage</a>
+                    </div>
+                </div>
+                
+            </nav>
+            
+            <div class="contact-info">
+                <a href="tel:296697907" class="phone">+375(29)669-7907</a>
+                <a href="mailto:danikshatiy@mail.ru" class="email">danikshatiy@mail.ru</a>
+            </div>
+        </header>
 
 <main>
     <div class="part1">
@@ -52,13 +89,204 @@
 </div>
 
     </div>
+</div>
+
+<div class="p2H1">
+  <h1>Our core values</h1>
+  <p class="p2Sub">Our mission is to set the highest standards for construction sphere.</p>
+</div>
+
+<div class="values">
+  <div class="valueCard">
+    <div class="icon"><img src="quality.jpg" alt="Quality Icon"></div>
+    <h3>Quality</h3>
+    <p>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+  </div>
+  <div class="valueCard">
+    <div class="icon"><img src="safety.png" alt="Safety Icon"></div>
+    <h3>Safety</h3>
+    <p>Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.</p>
+  </div>
+  <div class="valueCard">
+    <div class="icon"><img src="comfort.svg" alt="Comfort Icon"></div>
+    <h3>Comfort</h3>
+    <p>Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad..</p>
+  </div>
+</div>
+
+<div class="Know">
+    <div class="p2H1">
+      <h1>Want to know more? Ask us a question:</h1>
+    </div>
+
+    <button class="questionForm">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="tel" name="phone" placeholder="Phone number" required>
+      <textarea name="message" placeholder="Your question..." required></textarea>
+      <button type="submit" class="btn sendBtn">SEND</button>
+    </button>
+</div>
+</div>
+
+
+<div class="part3">
+<div class="p2H1"> 
+  <h1>Our services</h1>
+</div>
+  
+<p class="p2Sub">Createx Construction Bureau is a construction giant with a full range of construction services.</p>
+
+<section class="servicesSection">
+ 
+
+  <div class="servicesGrid">
+    <div class="servicesCard">
+      <div class="icon"><img src="wall.jpg" alt="Construction Icon"></div>
+      <h3>Construction</h3>
+    </div>
+
+    <div class="servicesCard">
+      <div class="icon"><img src="drawing.png" alt="Project Icon"></div>
+      <h3>Project Development</h3>
+    </div>
+
+    <div class="servicesCard active">
+      <div class="backImgDesign"></div>
+      <div class="icon"><img src="palette.png" alt="Interior Icon"></div>
+      <h3>Interior Design</h3>
+    </div>
+
+    <div class="servicesCard">
+      <div class="icon"><img src="roller.jpg" alt="Repairs Icon"></div>
+      <h3>Repairs</h3>
+    </div>
+  </div>
+</section>
+
+
+<div class="servicesBtns">
+  <button class="btn learnMoreServices">Learn more about our services</button>
+  <button class="btn viewServices">VIEW SERVICES</button>
+</div>
+</div>
+
+
+<div class="part4">
+  <div class="projectsIntro">
+    <h2>Browse our selected projects<br>and learn more about our work</h2>
+  </div>
+
+  <div class="projectsGrid">
+    <div class="projectCard">
+      <img src="tower.jpg" alt="Red Finger Building">
+      <div class="projectInfo">
+        <h3>Red Finger Building</h3>
+        <p>Business Centers</p>
+      </div>
+    </div>
+
+    <div class="projectCard">
+      <img src="glassBuilding.jpg" alt="Cubes Building">
+      <div class="projectInfo">
+        <h3>Cubes Building</h3>
+        <p>Business Centers</p>
+        <button class="btn viewProject">VIEW PROJECT</button>
+      </div>
+    </div>
+
+    <div class="projectCard">
+      <img src="pencilTower.jpg" alt="The Pencil Building">
+      <div class="projectInfo">
+        <h3>The Pencil Building</h3>
+        <p>Stores & Hotels</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsCTA">
+    <button class="btn explore">Explore all our works</button>
+    <button class="btn viewPortfolio">VIEW PORTFOLIO</button>
   </div>
 </div>
 
 
+<div class="part5">
+  <div class="supportedSection">
+    <h2 class="supportedTitle">Supported by 12+ partners</h2>
+
+    <div class="supportedLogos">
+      <img src="InDepth Consulting Logo - Untitled Page.png" alt="DeepTech Consulting">
+      <img src="higher.png" alt="HIGHER FIT">
+      <img src="Sentinal Consulting Logo.png" alt="CRITICAL CONSULTING">
+      <img src="Happy Home Logo.png" alt="HAPPY HOME">
+      <img src="For Sale Logo.png" alt="ForSale">
+      <img src="Sunset Realty Logo.png" alt="Smart Realty">
+    
+    </div>
+  </div>
+
+<h1 class="sayingH1">What our clients are saying</h1>
+
+<div class="testimonialWrapper">
+  <div class="sayinBox">
+    <div class="circleImg"><img src="profile-image.png" alt="person"></div>
+    <p class="p2Sub">
+      Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
+    </p>
+    <h2 class="sayingH2">Shawn Edwards</h2>
+    <p class="p5Sub">Position, Company name</p>
+  </div>
+
+  <div class="testimonialPhoto">
+    <img src="hand.jpg" alt="Construction Team">
+  </div>
+</div>
+</div>
 
 
 
+<div class="part6">
+  <div class="facts">
+    <img src="Figures.png" alt="figures">
+  </div>
+
+  <div class="newsBox">
+    <h1 class="newsH1">Recent news</h1>
+
+    <div class="newsGrid">
+      <div class="newsCard">
+        <img src="workerOnGlass.jpg" alt="workerOnGlass">
+        <div class="newsInfo">
+          <h3>How to Build Climate Change-Resilient Infrastructure</h3>
+          <p class="newsMeta">Industry News • June 4, 2020 • 4 comments</p>
+        </div>
+      </div>
+
+      <div class="newsCard">
+        <img src="hatOnBricks.jpg" alt="hatOnBricks">
+        <div class="newsInfo">
+          <h3>How Construction Can Help Itself</h3>
+          <p class="newsMeta">Innovation • June 12, 2020 • No comments</p>
+        </div>
+      </div>
+
+      <div class="newsCard">
+        <img src="floor.jpg" alt="floor">
+        <div class="newsInfo">
+          <h3>Types of Flooring Materials</h3>
+          <p class="newsMeta">Company News • Dec 1, 2019 • No comments</p>
+        </div>
+      </div>
+    </div>
+
+ <div class="newsBtns">
+  <button class="btn explore">Explore all our news posts</button>
+  <button class="btn view">VIEW ALL NEWS</button>
+</div>
+
+
+  </div>
+</div>
 
 
 

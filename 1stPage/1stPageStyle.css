@@ -35,7 +35,6 @@ body{
     background-position: center;
     height: 980px;
     display: flex;
-    top: 92px;
     width: 100%;
     justify-content: center;
     }
@@ -85,8 +84,7 @@ display: flex;
 }
 
 .btn{
-  cursor: pointer;
-
+cursor: pointer;
 font-size: var(--btnFontSize);
 padding: var(--btnPadding);
 border-radius: var(--btnBorderRadius);
@@ -176,4 +174,596 @@ border: none;
   border-left: 20px solid white;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
+}
+
+/* values */
+.values {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.valueCard {
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-10px);
+}
+
+.valueCard .icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.valueCard h3 {
+  font-size: 22px;
+  color: var(--secondaryColor);
+  margin-bottom: 10px;
+}
+
+.valueCard p {
+  font-size: 16px;
+  color: var(--secondaryColor);
+  line-height: 1.5;
+}
+
+
+/* Know more */
+.Know {
+  display: block;
+  margin: 60px auto;
+  text-align: center;
+}
+
+
+
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: var(--backgroundColor);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.questionForm input,
+.questionForm textarea {
+  font-size: 16px;
+  padding: 15px;
+  resize: vertical;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.questionForm textarea {
+  min-height: 120px;
+}
+
+.sendBtn {
+  align-self: flex-start;
+  background-color: var(--btnColor);
+  color: white;
+  border: none;
+  padding: var(--btnPadding);
+  border-radius: var(--btnBorderRadius);
+  font-size: var(--btnFontSize);
+  cursor: pointer;
+  transition: var(--btnTransition);
+}
+
+.sendBtn:hover {
+  background-color: white;
+  color: var(--btnColor);
+  border: var(--btnBorder);
+}
+
+
+/* 3часть */
+
+.part3{
+  top: 2600px;
+  text-align: center;
+  background-image: url('foneForPrt3.jpg');
+  padding: 100px 20px;
+}
+
+/* services */
+
+.servicesSection {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.servicesTitle {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  margin-bottom: 10px;
+}
+
+.servicesSubtitle {
+  font-size: 20px;
+  color: var(--secondaryColor);
+  margin-bottom: 60px;
+}
+
+.servicesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.servicesCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 285px;
+  height: 285px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.servicesCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+.servicesCard .icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.servicesCard h3 {
+  font-size: 22px;
+  color: var(--secondaryColor);
+}
+
+.servicesCard.active {
+  background-color: var(--secondaryColor);
+  color: white;
+}
+
+.servicesCard.active h3 {
+  color: white;
+}
+
+.servicesCard.active .icon img {
+  filter: brightness(0) invert(1);
+}
+
+.backImgDesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('livingRoom.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+
+/* btns */
+
+.servicesBtns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.learnMoreServices {
+  background-color: transparent;
+  color: var(--secondaryColor);
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.learnMoreServices:hover {
+  background-color: var(--primaryColor);
+  color: var(--btnHoverColor);
+  border: var(--btnBorder);
+}
+
+.viewServices {
+font-size: 25px;
+  background-color: var(--btnColor);
+  color: white;
+  border: none;
+}
+
+.viewServices:hover {
+  background-color: white;
+  color: var(--btnColor);
+  border: var(--btnBorder);
+}
+
+
+/* 4часть */
+
+.part4{
+ top: 2600px;
+  background-color: white;
+  padding: 100px 20px;
+}
+
+.projectsIntro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projectsIntro h2 {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  line-height: 1.4;
+}
+
+.projectsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.projectCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.projectInfo {
+  padding: 20px;
+}
+
+.projectInfo h3 {
+  font-size: 22px;
+  color: var(--secondaryColor);
+  margin-bottom: 5px;
+}
+
+.projectInfo p {
+  font-size: 16px;
+  color: var(--secondaryColor);
+  margin-bottom: 15px;
+}
+
+.viewProject {
+  background-color: var(--btnColor);
+  color: white;
+  border: none;
+  padding: var(--btnPadding);
+  border-radius: var(--btnBorderRadius);
+  font-size: var(--btnFontSize);
+  cursor: pointer;
+  transition: var(--btnTransition);
+}
+
+.viewProject:hover {
+  background-color: white;
+  color: var(--btnColor);
+  border: var(--btnBorder);
+}
+
+.projectsCTA {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.explore {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+  font-size: 25px;
+}
+
+.explore:hover {
+  background-color: var(--primaryColor);
+  color: var(--btnHoverColor);
+  border: var(--btnBorder);
+}
+
+.viewPortfolio {
+  background-color: var(--btnColor);
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: var(--btnBorderRadius);
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  transition: var(--btnTransition);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.viewPortfolio:hover {
+  background-color: white;
+  color: var(--btnColor);
+  border: var(--btnBorder);
+}
+
+
+
+
+/* 5часть */
+
+.part5 {
+  background-color: #F4F5F6;
+  padding: 100px 20px;
+}
+
+.supportedSection {
+  margin-bottom: 60px;
+}
+
+.supportedTitle {
+    text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.supportedLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.supportedLogos img {
+  max-width: 140px;
+  max-height: 60px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.supportedLogos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: none;
+}
+
+/* clients saying */
+
+.sayinBox {
+  max-width: 600px;
+  flex: 1;
+
+}
+
+.testimonialWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.testimonialPhoto img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.testimonialPhoto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sayingH1{
+text-align: left;
+font-weight: bold;
+font-size: 32px;
+}
+
+.circleImg{
+margin-top: 50px;
+border-radius: 50%;
+max-width: 75px;
+max-height: 75px;
+}
+
+.sayingH2{
+  margin-top: 20px;
+font-weight: bold;
+}
+
+
+.p5Sub{
+  font-size: 20px;
+  margin-top: 10px;
+  color: gray;
+}
+
+
+
+
+/* 6часть */
+
+.part6 {
+  background-color: white;
+  padding: 80px 20px;
+}
+
+.facts {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.facts img {
+  height: auto;
+  display: block;
+}
+
+
+
+
+.newsBox {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsH1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.newsCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.newsCard:hover {
+  transform: translateY(-10px);
+}
+
+.newsCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.newsInfo {
+  padding: 20px;
+}
+
+.newsInfo h3 {
+  font-size: 20px;
+  color: var(--secondaryColor);
+  margin-bottom: 10px;
+}
+
+.newsMeta {
+  font-size: 14px;
+  color: gray;
+}
+
+.newsBtns {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsPrompt {
+  font-size: 20px;
+  color: var(--secondaryColor);
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn.view {
+  padding: var(--btnPadding);
+  font-size: var(--btnFontSize);
+  background-color: var(--btnColor);
+  color: white;
+  border-radius: var(--btnBorderRadius);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: none;
+  font-weight: bold;
+  transition: var(--btnTransition);
+  cursor: pointer;
+}
+
+.btn.view:hover {
+  background-color: white;
+  color: var(--btnColor);
+  border: var(--btnBorder);
+}
+
+.btn.explore {
+  padding: var(--btnPadding);
+  font-size: var(--btnFontSize);
+  background-color: transparent;
+  color: var(--secondaryColor);
+  border: var(--btnBorder);
+  border-radius: var(--btnBorderRadius);
+  font-weight: bold;
+  transition: var(--btnTransition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn.explore:hover {
+  background-color: var(--btnColor);
+  color: var(--btnHoverColor);
 }
