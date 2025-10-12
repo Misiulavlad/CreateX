@@ -501,6 +501,7 @@ font-size: 25px;
   font-weight: bold;
   border: none;
   font-size: 25px;
+  padding: 18px 36px;
 }
 
 .explore:hover {
@@ -581,12 +582,11 @@ font-size: 25px;
 
 .sayinBox {
   max-width: 600px;
-  flex: 1;
 }
 
 .testimonialWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
@@ -602,13 +602,11 @@ font-size: 25px;
 }
 
 .testimonialPhoto {
-  flex: 1;
   display: flex;
   justify-content: center;
 }
 
 .sayingH1{
-text-align: left;
 font-weight: bold;
 font-size: 32px;
 }
@@ -643,6 +641,8 @@ font-weight: bold;
 }
 
 .facts {
+  margin: 0 auto;
+  
   max-width: 1000px;
   display: flex;
   justify-content: center;
@@ -767,4 +767,89 @@ font-weight: bold;
 .btn.explore1:hover {
   background-color: var(--btnColor);
   color: var(--btnHoverColor);
+}
+
+
+/* 7часть */
+
+.part7{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.backimage{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.part2_item{
+    width: 500px;
+    padding: 30px 40px;
+    position: absolute;
+    background-color: white;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.p{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.information{
+    display: block;
+}
+
+.input{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+.input2{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+.check_text_block{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.checkbox{
+    accent-color: rgba(255, 90, 48, 1);
+    margin-right: 10px;
+}
+
+.check_text{
+    margin: 0;
+}
+
+.btn2{
+    border: var(--btnBorder);
+    border-radius: var(--btnBorderRadius);
+    color: white;
+    background-color: var(--btnBackgroundColor);
+    font-size: var(--btnFontSize);
+    padding: 15px 30px;
+    margin-top: 20px;
+    transition: var(--btnTransition);
+}
+
+.btn2:hover{
+    cursor: pointer;
+    background-color: rgb(255, 130, 100);
+    border: 2px solid rgb(255, 130, 100);
 }
