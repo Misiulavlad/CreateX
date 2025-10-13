@@ -1,6 +1,4 @@
-body{
-    margin: 0;
-}
+
 
 :root{
     --primaryColor: rgba(255, 90, 48, 1);
@@ -576,9 +574,8 @@ font-size: 25px;
   filter: none;
 }
 
+
 /* clients saying */
-
-
 
 .sayinBox {
   max-width: 600px;
