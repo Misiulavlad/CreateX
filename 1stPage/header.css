@@ -21,7 +21,7 @@
             position: relative;
         }
 
-        .logo {
+        .header-logo {
             display: flex;
             align-items: center;
         }
